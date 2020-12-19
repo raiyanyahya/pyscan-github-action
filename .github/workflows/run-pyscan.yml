@@ -18,6 +18,6 @@ jobs:
       - name: pull pyscan image
         run: docker pull docker.pkg.github.com/raiyanyahya/pyscan/pyscan:latest
       - name: list files
-        run: $GITHUB_PATH
+        run: pwd
       - name: run image
         run: docker run -v ${PWD}:/workdir:delegated docker.pkg.github.com/raiyanyahya/pyscan/pyscan
